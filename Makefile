@@ -1,3 +1,3 @@
 all:
-	gcc main.c -o avx -masm=intel -g
-	objdump -D -Mintel avx>avx.asm
+	gcc fdctflt.c -o dctflt -masm=intel -g
+	objdump -D -Mintel dctflt >dctflt.asm
