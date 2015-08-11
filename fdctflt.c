@@ -92,7 +92,7 @@ void main()
 		sprintf(str_rgb[i],"D%d%d",c,n);
 	}
 	void *p=0;
-/*
+
 	dump_ymm(ymmA);
 	dump_ymm(ymmB);
 	dump_ymm(ymmC);
@@ -101,7 +101,9 @@ void main()
 	dump_ymm(ymmF);
 	dump_ymm(ymmG);
 	dump_ymm(ymmH);
-*/
+
+
+printf("-->\n");
 
 	asm("vmovdqu ymm0, YMMWORD PTR [%0]"::"r"(ymmA));
 	asm("vmovdqu ymm1, YMMWORD PTR [%0]"::"r"(ymmB));
